@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import java.util.*;
 class square{
     public static void main(String arg[])
@@ -16,23 +16,4 @@ class square{
            System.out.println();
         }
     }
-=======
-import java.util.*;
-class square{
-    public static void main(String arg[])
-    {
-        int n;
-        Scanner sc=new Scanner(System.in);
-        n=sc.nextInt();
-        sc.close();
-        for(int i=1;i<=n;i++)
-        {
-           for ( int j=1;j<=n;j++)
-           {
-             System.out.print("*");
-           }
-           System.out.println();
-        }
-    }
->>>>>>> 1922271 (New add)
-}
+  }

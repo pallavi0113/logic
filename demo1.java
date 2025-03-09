@@ -9,6 +9,7 @@
         sc.nextLine();
         System.out.println("Enter the name:");
         name= sc.nextLine();
+        sc.close();
 
     }
     void printdata(){

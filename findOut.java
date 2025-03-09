@@ -6,6 +6,7 @@ public class findOut {
         Scanner sc=new Scanner (System.in);
         System.out.println("Enter the url:");
         url=sc.nextLine();
+        sc.close();
         if(url.endsWith(".com")){
             System.out.println("This a comercial website");
         }
