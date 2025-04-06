@@ -3,7 +3,7 @@ class PallaviException extends Exception{
         super(str);
     }
 }
-
+ 
 public class excep {
     public static void main(String[] args) {
         int i=20;
