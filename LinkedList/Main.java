@@ -9,6 +9,14 @@ public class Main {
             this.data=data;
         }
     }
+    public static void insertAtEnd(Node head, int val){
+        Node temp=new Node(val);
+        Node t=head;
+        while(t.next!=null){
+            t=t.next;
+        }
+        t.next=temp;
+    }
     public static void display(Node head){  //recurcive
         if(head==null) return;
         System.out.print(head.data + " ");
@@ -34,7 +42,7 @@ public class Main {
         // list.insertFirst(8);
         // list.insertFirst(17);
         // list.insertLast(99);
-        // list.insert(100, 9);
+        // list.insert(100, 9); 
         // list.display();
 
         Node a=new Node(5);
@@ -45,7 +53,9 @@ public class Main {
         a.next=b;
         b.next=c;
         c.next=d;
-        System.out.println(length(a));
+        insertAtEnd(a,87);
+        display(a);
+        // System.out.println(length(a));
 
     }
 }
