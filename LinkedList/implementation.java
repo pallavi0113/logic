@@ -12,7 +12,7 @@ public class implementation {
         int size=0;
         void insertAtEnd(int val){
             Node temp=new Node(val);
-            if(head==null){
+            if(head==null){ 
                 head=temp;
             } 
             else{

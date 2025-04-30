@@ -53,7 +53,7 @@ public class Main {
         a.next=b;
         b.next=c;
         c.next=d;
-        insertAtEnd(a,87);
+        insertAtEnd(a, 87);
         display(a);
         // System.out.println(length(a));
 
