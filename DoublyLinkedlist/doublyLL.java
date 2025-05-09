@@ -8,8 +8,8 @@ public class doublyLL {
 
         public Node(int data) {
             this.data = data;
-            this.next = null;
-            this.prev = null;
+            // this.next = null;
+            // this.prev = null;
         }
     }
     public static void display(Node head){
@@ -40,6 +40,34 @@ public class doublyLL {
         }
         System.out.println();
     }
+    public static Node insertatHead(Node head, int x){
+        Node t=new Node(30);
+        t.next=head;
+        head.prev=t;
+        head=t;
+        return head;
+    }
+    public static void insertatTail(Node head, int x){
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        Node t=new Node(x);
+        temp.next=t;
+        t.prev=temp;
+    }
+    public static void insertAtIdx(Node head,int idx, int x){
+        Node s=head;
+        for(int i=1;i<=idx-1;i++){
+            s=s.next;
+        }
+        Node r=s.next;
+        Node t=new Node(x);
+        s.next=t;
+        t.prev=s;
+        t.next=r;
+        r.prev=t;
+    }
     public static void main(String [] arg){
         Node a=new Node(4);
         Node b=new Node(10);
@@ -54,10 +82,16 @@ public class doublyLL {
         c.next=d;
         d.prev=c;
         d.next=e;
-        e.prev=d;
+        e.prev=d; 
         e.next=null;
         display(a);
-        displayrev(e);
-        display2(c);
-    }
+        insertAtIdx(a, 3, 56);
+        display(a);
+        // displayrev(e);
+        // display2(c);
+        // Node neadHead=insertatHead(a, 30);
+        // display(neadHead);
+        // insertatTail(neadHead, 100);
+        // display(neadHead);
+    } 
 }
