@@ -1,7 +1,8 @@
-import java.util.Stack;
 import java.util.Scanner;
-public class copyStackSameOrder {
-    public static void main(String[] args) {
+import java.util.Stack;
+
+public class reverseStack {
+     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack<Integer> st = new Stack<>();
         int n;
@@ -12,20 +13,19 @@ public class copyStackSameOrder {
             st.push(sc.nextInt());
         }
         System.out.println("Original Stack: " + st);
-        Stack<Integer> gt=new Stack<>();
-        while(st.size()>0){
+        Stack<Integer> gt = new Stack<>();
+        while (st.size() > 0) {
             gt.push(st.pop());
         }
-        Stack<Integer> rt=new Stack<>();
-        while(gt.size()>0){
+        System.out.println("Reversed stack: " + gt);
+        Stack<Integer> rt = new Stack<>();
+        while (gt.size() > 0) {
             rt.push(gt.pop());
         }
-        System.out.println("Copied stack: " + rt);
-        while(rt.size()>0){
+        System.out.println("Reversed stack: " + rt);
+        while(rt.size() > 0) {
             st.push(rt.pop());
         }
-        System.out.println("Original Stack after copying: " + st);
-        System.out.println("Copied Stack after copying: " + rt);
-    }
+        System.out.println("Original Stack after reversing: " + st);
+    }    
 }
- 
