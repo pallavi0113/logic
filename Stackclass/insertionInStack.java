@@ -1,6 +1,7 @@
-import java.util.Stack;
 import java.util.Scanner;
-public class copyStackSameOrder {
+import java.util.Stack;
+
+public class insertionInStack {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Stack<Integer> st = new Stack<>();
@@ -12,19 +13,16 @@ public class copyStackSameOrder {
             st.push(sc.nextInt());
         }
         System.out.println("Original Stack: " + st);
+        int idx=3;
+        int x=12;
         Stack<Integer> gt=new Stack<>();
-        while(st.size()>0){
+        while(st.size()>idx){
             gt.push(st.pop());
         }
-        Stack<Integer> rt=new Stack<>();
+        st.push(x);
         while(gt.size()>0){
-            rt.push(gt.pop());
+            st.push(gt.pop());
         }
-        System.out.println("Copied stack: " + rt);
-        while(rt.size()>0){
-            st.push(rt.pop());
-        }
-        System.out.println("Original Stack after copying: " + st);
-        System.out.println("Copied Stack after copying: " + rt);
+        System.out.println("Stack after inserting " + x + " at index " + idx + ": " + st);
     }
 }
