@@ -17,6 +17,17 @@ public class Length{
         }
         return cnt;
     }
+    public static int check(Node head, int val){
+        Node temp=head;
+        while(temp!=null){
+            if(temp.data==val){
+                return 1;
+            }
+            temp=temp.next;
+        }
+        return 0;
+
+    }
     public static void print(Node head){
         Node current=head;
         System.out.println("LinkedList :");
@@ -26,6 +37,7 @@ public class Length{
         }
         System.out.println("null");
     }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter number of element:");
@@ -44,7 +56,9 @@ public class Length{
             current.next=new Node(data);
             current=current.next;
         }
+        int val=60;
         System.out.println("Length: " + length(head));
+        System.out.println("Search : " + check(head,val));
         print(head);
         sc.close();
     }
