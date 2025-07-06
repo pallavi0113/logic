@@ -58,7 +58,7 @@ public class Length{
         }
         int val=60;
         System.out.println("Length: " + length(head));
-        System.out.println("Search : " + check(head,val));
+        System.out.println("value is  : " + check(head,val));
         print(head);
         sc.close();
     }
