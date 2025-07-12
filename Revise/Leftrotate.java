@@ -1,12 +1,23 @@
 class Leftrotate{
+    // static void rotate(int arr[],int n){
+    //     int temp[]=new int[n];
+    //     for(int i=1;i<n;i++){
+    //         temp[i-1]=arr[i];
+    //     }
+    //     temp[n-1]=arr[0];
+    //     for(int i=0;i<n;i++){
+    //         System.out.print(temp[i] + " ");
+    //     }
+    // }
+
     static void rotate(int arr[],int n){
-        int temp[]=new int[n];
-        for(int i=1;i<n;i++){
-            temp[i-1]=arr[i];
+        int temp=arr[0];
+        for(int i=0;i<n-1;i++){
+            arr[i]=arr[i+1];
         }
-        temp[n-1]=arr[0];
+        arr[n-1]=temp;
         for(int i=0;i<n;i++){
-            System.out.print(temp[i] + " ");
+            System.out.print(arr[i]+ " ");
         }
     }
     public static void main(String arg[]){
