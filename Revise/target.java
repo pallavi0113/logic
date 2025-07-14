@@ -6,8 +6,8 @@ class target{
             for(int j=i+1;j<n;j++){
                 if(arr[i]+arr[j]==target){
                 ans[0]=i;
-                ans[1]=j;
-                return ans;
+                ans[1]=j;                                           ///tc=o(n^2)
+                return ans;                                         ///sc=o(1)
             }
          }
         }
