@@ -3,7 +3,7 @@ public class Second {
         int arr[]={12,35,1,10,34,1};
         int first=Integer.MIN_VALUE;
         int second=Integer.MIN_VALUE;
-        int count=0;
+        // int count=0;
         for(int i=0;i<arr.length;i++){
             if(arr[i]>first){
                 second=first;
