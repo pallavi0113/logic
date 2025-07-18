@@ -14,3 +14,7 @@ else  low=mid+1
 Lower bound is useful when you want to find if target exists or its first position.
 
 Upper bound is useful to count frequency or find range end.
+
+
+<!-- search insert position  -->
+when you want to search position index then follow lower bond trick follow
