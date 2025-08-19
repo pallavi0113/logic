@@ -19,4 +19,6 @@ public class Duplicate {
             fast=arr[fast];
         }
         System.out.println("The duplicate : " + slow);
-    }}
+    }
+}
+
