@@ -1,14 +1,30 @@
-public class Missing {
-    public static void main(String[] args) {
-        int arr[]={1,2,4,6,3,7,8};
-        int n1=arr.length;
-        int n=8;
-        int extra =n*(n+1)/2;
-        int sum=0;
-        for(int i=0;i<n1;i++){
-            sum+=arr[i];
+// public class Missing {
+//     public static void main(String[] args) {
+//         int arr[]={1,2,4,6,3,7,8};
+//         int n1=arr.length;
+//         int n=8;
+//         int extra =n*(n+1)/2;
+//         int sum=0;
+//         for(int i=0;i<n1;i++){
+//             sum+=arr[i];
+//         }
+//         int missing=extra-sum;
+//         System.out.println("Missing: " + missing);
+//     }
+// }
+public class Missing{
+    public static int getSingle(int[] arr){
+        int n=arr.length;
+        int xorr=0;
+        for(int i=0;i<n;i++){
+            xorr=xorr^arr[i];
         }
-        int missing=extra-sum;
-        System.out.println("Missing: " + missing);
+        return xorr;
+    }
+
+    public static void main(String[] args) {
+        int[] arr={4,1,2,1,2};
+        int a= getSingle(arr);
+        System.out.print("The single element is: " + a);
     }
 }
