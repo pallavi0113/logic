@@ -3,9 +3,9 @@ import java.util.Arrays;
 public class SearchInString {
     public static void main(String[] args) {
         String name="Kunal";
-        char target='g';
+        char target='n';
         System.out.println(search(name,target));
-        System.out.println(search2(name, target));
+        // System.out.println(search2(name, target));
         System.out.println(Arrays.toString(name.toCharArray()));
     }
     static boolean search2(String str,char target){
