@@ -32,4 +32,7 @@ class MaxDepth {
         String s="(1+(2*3)+((8)/4))+1";
         System.out.println("Result depth: " + maxDepth(s));
     }
+
+    /// maximum depth of bracket
+    ///
 }
