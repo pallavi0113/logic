@@ -30,6 +30,8 @@ class HappyNumber{
         }
         else{
             System.err.println("this is not happy number ");
-        }
+        } 
     }
 }
+
+//happy number is the 19=1^2+9^2=82
